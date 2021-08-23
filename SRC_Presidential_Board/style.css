@@ -108,3 +108,25 @@ font-size: 9rem;margin-bottom: 2px;
             width: 100%;
             margin-bottom: 2px;
 }
+    #Footer h1{
+    color:chartreuse;
+    background-color: burlywood;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 7rem;
+    padding: 5px;
+    }
+    
+    #Middle h1{
+    color: rgb(250, 8, 101);
+    background-color: rgb(10, 189, 243);
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 7rem;
+    padding: 5px;
+    
+}
