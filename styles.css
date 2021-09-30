@@ -2,6 +2,10 @@ body {
     font-family: 'helvetica', 'sans-serif';
     margin: 0;
 }
+.a
+{text-decoration: none;
+
+}
 
 /* start: global style rules */
 h1, h2, h3, h4, h5 {
@@ -320,6 +324,12 @@ nav ul li a:hover {
     color: #999;
 }
 /* end: game types styles */
+#ads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
 /* start: recent games styles */
 #recent-games {
@@ -694,12 +704,24 @@ footer ul li a {
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 35px;
     border-radius: 5px;
-    grid-template-areas: 
+    grid-template-areas:
+        "q q q q q q q q q q q" 
         "h h h h h h h h h h h"
         "m m m m m m m m m s s"
         "m m m m m m m m m t t"
         "m m m m m m m m m a a"
         "g g g g g g g g g g g";
+}
+.containers a{
+text-decoration: none;
+
+}
+.Ads{
+grid-area: q;
+background-color: #40ABF5;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .header{
 background-color: rgb(255, 255, 255);
@@ -732,11 +754,13 @@ grid-gap: 10px;
 border-radius: 5px;
 }
 
-
 .sidebar{
     background-color: yellow;
     grid-area: s;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sidebar1{
     background-color: yellow;
@@ -747,12 +771,19 @@ border-radius: 5px;
     background-color: yellow;
     grid-area: a;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bottombar{
     grid-area: g;
     background-color: lawngreen;
+    display: flex;
     align-content: center;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 /*Holder 1*/
@@ -927,6 +958,7 @@ border-radius: 5px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "z f f f f";
     grid-gap:4px;
+    height: 53px;
 }
 .pic5{
     grid-area: z;
@@ -1281,6 +1313,12 @@ border-radius: 5px;
     #Upcoming .box .Upcoming-image {
         height: 220px;
     }
+    /*nav bar*/
+    #sidebar{
+        margin-bottom: 20px;
+        
+
+    }
     /*Hero style*/
     #hero-image {
         background: url('img/Gamecover\ 1.jpg') top center no-repeat;
@@ -1401,6 +1439,7 @@ border-radius: 5px;
     grid-gap: 3px;
     border-radius: 5px;
     grid-template-areas: 
+        "q q"    
         "h h"
         "m m"
         "m m"
@@ -1425,7 +1464,7 @@ flex-direction: column;
 .Pic{
 position: relative;
 align-items: center;
-padding-left: 25%;
+padding-left: 1px;
 }
 
 .holder2{
@@ -1435,7 +1474,7 @@ flex-direction: column;
 .pic2{
 position: relative;
 align-items: center;
-padding-left: 25%;
+padding-left: 2%;
 }
 .holder3{
 display: flex;
@@ -1444,7 +1483,7 @@ flex-direction: column;
 .pic3{
 position: relative;
 align-items: center;
-padding-left: 25%;
+padding-left: 2%;
 }
 .holder4{
 display: flex;
@@ -1453,7 +1492,7 @@ flex-direction: column;
 .pic4{
 position: relative;
 align-items: center;
-padding-left: 25%;
+padding-left: 2%;
 }
 .holder5{
 display: flex;
@@ -1462,11 +1501,20 @@ flex-direction: column;
 .pic5{
 position: relative;
 align-items: center;
-padding-left: 25%;
+padding-left: 2%;
 } 
-
-
-
+.sidebar2{
+    padding-bottom: 15px;
+}
+.sidebar1{
+    padding-bottom: 15px;
+}
+.sidebar{
+    padding-bottom: 15px;
+}
+.bottombar{
+    padding-bottom: 15px;
+}
     /*End of Games*/
 /* end: media queries */
 }
